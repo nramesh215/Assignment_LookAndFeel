@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/32452.jpg">
+    <title>Classic Amusement Park</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <style>
+         footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;         
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./img/32452.jpg" alt="Amusement Park Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="./aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="./things.html">Things to Do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="./events.html">Events</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="./tickets.html"><i class="bi bi-ticket-detailed"></i> Buy Ticket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="./profile.html"><i class="bi bi-person"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold " href="./cart.html">
+                            <i class="bi bi-cart"></i>
+                            <span id="cartCount" class="bg-danger rounded-circle p-2">0</span> Items
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5 mb-5">
+        <h1 class="mb-4 display-1">Ticket Options</h1>
+        <div class="row">
+            <!-- Single Ticket -->
+            <div class="col-md-4">
+                <div class="card" style="height: 28rem;">
+                    <div class="card-header"><strong> Single Ticket</strong></div>
+                    <img src="./img/single_ticket.jpg" class="card-img-top img-fit" alt="Single Ticket">
+                    <div class="card-body">
+                        <h5>Access all rides and attractions for one day.</h5>
+                        <h5 class="price"><span class="original-price text-danger"><del/>$120</del></span> $100</h5>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary decrement" type="button">-</button>
+                            <input type="text" class="form-control text-center quantity" value="0">
+                            <button class="btn btn-outline-secondary increment" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- VIP Single Day Pass -->
+            <div class="col-md-4">
+                <div class="card" style="height: 28rem;">
+                    <div class="card-header"><strong>VIP Single Day Pass</strong></div>
+                    <img src="./img/vip_ticket.jpg" class="card-img-top img-fit" alt="VIP Ticket">
+                    <div class="card-body">
+                        <h5>Includes fast-track access to all rides and a meal voucher.</h5>
+                        <h5 class="price">$150</h5>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary decrement" type="button">-</button>
+                            <input type="text" class="form-control text-center quantity" value="0">
+                            <button class="btn btn-outline-secondary increment" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- One Year Pass -->
+            <div class="col-md-4">
+                <div class="card" style="height: 28rem;">
+                    <div class="card-header"><strong>One Year Pass</strong></div>
+                    <img src="./img/year_pass.jpg" class="card-img-top img-fit" alt="Year Pass">
+                    <div class="card-body">
+                        <h5>Unlimited access to the park and all special events throughout the year.</h5>
+                        <h5 class="price">$500</h5>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary decrement" type="button">-</button>
+                            <input type="text" class="form-control text-center quantity" value="0">
+                            <button class="btn btn-outline-secondary increment" type="button">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 text-muted">© 2024 Classic Amusement Park</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.instagram.com/" class="text-white me-3">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" class="text-white me-3">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.twitter.com/" class="text-white">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/tickets.js"></script>
+
+</body>
+</html>

@@ -1,47 +1,24 @@
-/**
-Sample css code
-*/
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
-html {
-  height: 100%;
+body {
+  background-color: #f8f9fa; /* A light grey background */
 }
-
-/*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+.navbar-custom {
+  background-color: white; /* White navbar background */
 }
-
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
+.navbar-brand img {
+  height: 40px; /* Adjust size as necessary */
 }
-
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
+.image-container img {
+  width: 100%;
+  height: 400px; /* Adjusted height - you can modify this value based on your needs */
+  object-fit: cover; /* Ensures the image covers the area, cropping it as necessary without distorting */
 }
-
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
+.fire {
+  width: 100%;
+  height: 400px; /* Adjusted height - you can modify this value based on your needs */
+  object-fit: cover; /* Ensures the image covers the area, cropping it as necessary without distorting */
 }
-
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
-}
-
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
-  text-decoration: none;
+.img-fit {
+width: 100%; /* Full width of the card */
+height: 200px; /* Fixed height for all images */
+object-fit: cover; /* Covers the area, cropping as needed without distorting aspect ratios */
 }
